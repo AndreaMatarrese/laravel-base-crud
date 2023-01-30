@@ -22,6 +22,6 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 // Route::get('/comics/{comic}/edit', 'ComicController@edit')->name('comics.edit');
 // Route::delete('/comics/{comic}', 'ComicController@destroy')->name('comics.destroy');
 
-Route::get('/','AdminController@dashboard')->name('admin.dashboard');
+// Route::get('/','AdminController@dashboard')->name('admin.dashboard');
 
-Route::resource('comic', 'ComicController');
+Route::resource('comics', 'ComicController');
