@@ -36,7 +36,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all();
+        $data = $request->all(); //cattura i dati inviati tramite il form($data)
         $comic = new Comic();
             $comic -> title = $data['title'];
             $comic -> description = $data['description'];
@@ -68,7 +68,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**

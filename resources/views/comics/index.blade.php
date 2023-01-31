@@ -12,7 +12,10 @@
                 <div>{{ $comic->price }}</div>
                 <div>{{ $comic->sale_date }}</div>
                 <div>{{ $comic->type }}</div>
-                <div><a href="/comics/{{ $comic->id }}" class="btn btn-primary">Scopri</a></div>
+                <div class="row row-cols-2">
+                    <a href="/comics/{{ $comic->id }}" class="btn btn-primary col">Scopri</a>
+                    <a href="/comics/{{ $comic->id }}/edit" class="btn btn-primary col">Modifica</a>
+                </div>
             </div>
         @endforeach
     </div>
