@@ -12,6 +12,7 @@
                 <div>{{ $comic->price }}</div>
                 <div>{{ $comic->sale_date }}</div>
                 <div>{{ $comic->type }}</div>
+                <div><a href="/comics/{{ $comic->id }}" class="btn btn-primary">Scopri</a></div>
             </div>
         @endforeach
     </div>
